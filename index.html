@@ -230,7 +230,7 @@ function go(){
   if(why.length){clump();box.className='res bad';box.innerHTML='Шайкеш эмес: эритроциттер чапташат.<small>Себеби: '+why.join('; ')+'.</small>'}
   else{scatter();box.className='res ok';box.innerHTML='Шайкеш: реакция болбойт.<small>Донордун антигендери реципиенттин плазмасында өзүнө каршы антителолорду жолуктурбайт.</small>'}
 }
-$('go').onclick=go;
+$('go').onclick=go;$('don').onchange=go;$('rec').onchange=go;
 $('rst').onclick=()=>{scatter();$('res').className='res';$('res').textContent='Топторду тандап, «Кан куюу» баскычын басыңыз.'};
 // 3D эритроцит
 fill($('g3'),BL,bname,'A+');
